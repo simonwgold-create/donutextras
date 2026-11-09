@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "donutextras",
+  "version": "${version}",
+  "name": "Donut Extras",
+  "description": "Client-side payment popups (big, top-right, green names with player heads) and voice-chat mouth animation for your skin.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.simon.donutextras.DonutExtrasClient"],
+    "voicechat": ["dev.simon.donutextras.voice.VoiceMouthPlugin"]
+  },
+  "mixins": ["donutextras.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": ">=26.2-",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "voicechat": "*"
+  }
+}
